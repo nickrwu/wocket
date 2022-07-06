@@ -1,5 +1,5 @@
 FROM node:current-alpine
-
+ENV NODE_OPTIONS=--openssl-legacy-provider
 WORKDIR /app
 
 COPY package.json .
